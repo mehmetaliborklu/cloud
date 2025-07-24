@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # GitHub Actions Linux ortamında çalışacaktır.
 
     steps:
       - name: Checkout kaynak kodu
@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build Spring Boot app
-        run: ./mvnw clean package -DskipTests
+        run: ./mvnw clean package -DskipTests  # Maven Wrapper komutunu çalıştır.
 
   deploy:
     runs-on: ubuntu-latest
