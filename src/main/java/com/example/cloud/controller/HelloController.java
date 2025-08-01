@@ -11,6 +11,6 @@ public class HelloController {
 
     @GetMapping
     public ResponseEntity<?> hello() {
-        return ResponseEntity.ok("Hello Uygulaması Başlatıldı.");
+        return ResponseEntity.ok("Render ile Spring Boot CI/CD çalışıyor!");
     }
 }
